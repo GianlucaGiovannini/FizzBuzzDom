@@ -5,27 +5,26 @@
 }
 
 body {
-    background-color: rgb(34, 139, 180);
+    background-color: #183a4a;
 }
 
 .number {
-    width: 80px;
-    height: 80px;
-    border: 1px solid black;
+    width: 100px;
+    height: 100px;
 }
 
 .bg_blue {
-    background-color: rgb(56, 56, 228);
+    background-color: #3d88ae;
 }
 
 .bg_green {
-    background-color: rgb(24, 185, 123);
+    background-color: #61d2a4;
 }
 
 .bg_yellow {
-    background-color: rgb(230, 230, 77);
+    background-color: #fed277;
 }
 
 .bg_red {
-    background-color: rgb(221, 75, 75);
+    background-color: #de5471;
 }
