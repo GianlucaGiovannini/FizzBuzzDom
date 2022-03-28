@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(34, 139, 180);
+}
+
+.number {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+}
+
 .bg_blue {
     background-color: rgb(56, 56, 228);
 }

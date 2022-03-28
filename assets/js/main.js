@@ -1,24 +1,37 @@
 /* Scrivi un programma che stampi in console in numeri da 1 a 100 */
 const numbersElement = document.querySelector(".container")
+const backgroundElement = document.querySelector(".number")
 
 for (let i = 1; i <= 100; i++) {
+    let print;
 
-    /* const markupContainer = `
+    const markupContainer = `
      <div class="number d-flex justify-content-center align-items-center">
-     <div>${i}</div>
+        <div>${print}</div>
      </div>
-     ` */
+     `
+
     if ((i % 3 == 0) && (i % 5 == 0)) {
 
-        console.log("FizzBuzz")
+        print = "FizzBuzz";
+        numbersElement.insertAdjacentHTML("beforeend", markupContainer);
+        backgroundElement.classList.add("bg_red");
+        console.log("FizzBuzz");
     } else if (i % 3 == 0) {
-
-        console.log("Fizz")
+        print = "Fizz";
+        numbersElement.insertAdjacentHTML("beforeend", markupContainer);
+        console.log("Fizz");
+        backgroundElement.classList.add("bg_green");
     } else if (i % 5 == 0) {
-
-        console.log("Buzz")
+        print = "Buzz";
+        numbersElement.insertAdjacentHTML("beforeend", markupContainer);
+        backgroundElement.classList.add("bg_yellow");
+        console.log("Buzz");
     } else {
-        console.log(i)
+        print = i;
+        numbersElement.insertAdjacentHTML("beforeend", markupContainer);
+        backgroundElement.classList.add("bg_blue");
+        console.log(i);
     }
 
     // numbersElement.insertAdjacentHTML("beforeend", markupContainer)
