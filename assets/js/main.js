@@ -1,4 +1,4 @@
-const numbersElement = document.querySelector(".container")
+const containerElement = document.querySelector(".container")
 let print;
 let color;
 
@@ -27,5 +27,5 @@ for (let i = 1; i <= 100; i++) {
         <div>${print}</div>
      </div>
      `
-    numbersElement.insertAdjacentHTML("beforeend", markupContainer);
+    containerElement.insertAdjacentHTML("beforeend", markupContainer);
 }
