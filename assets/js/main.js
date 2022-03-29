@@ -4,7 +4,7 @@ let color;
 
 for (let i = 1; i <= 100; i++) {
 
-    if ((i % 3 == 0) && (i % 5 == 0)) {
+    if ((i % 3 == 0) && (i % 5 == 0)) { // oppure i % 15 == 0)
         print = "FizzBuzz";
         color = "bg_red"
         console.log("FizzBuzz")
